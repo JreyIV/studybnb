@@ -3,12 +3,12 @@ import Nav from "../components/Nav.jsx";
 
 const Home = () => {
   return (
-    <main className="relative">
+    <main className="relative max-container">
       <Nav />
-      <section>
+      <section className="max-container">
         <Hero />
       </section>
-      <section>
+      <section className="max-container">
         <About />
       </section>
     </main>

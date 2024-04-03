@@ -15,10 +15,10 @@ const Hero = () => {
           <h1 className="font-montserrat text-6xl max-md:text-4xl font-bold">
             studybnb
           </h1>
-          <p className="font-montserrat mb-10 text-2xl max-md:text-xl font-bold">
+          <p className="font-montserrat  text-2xl max-md:text-xl font-bold">
             Chicago
           </p>
-          <p className="font-palanquin mb-5 text-sm md:text-base">
+          <p className="font-palanquin mt-10 mb-5 text-sm md:text-lg">
             Ditch the monotony of your college library or office and romanticize
             your study or work session. Find the most vibey and pleasant places
             to work around Chicago with Studybnb.

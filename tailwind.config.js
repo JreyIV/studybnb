@@ -28,6 +28,9 @@ export default {
       },
       colors: {
         "off-white": "#eae5d3",
+        "brand-beige": "#d6b195",
+        "dark-green": "#122222",
+        "racing-green": "#004225",
       },
     },
   },
