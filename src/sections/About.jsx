@@ -7,7 +7,7 @@ const About = () => {
       id="about"
       className="min-h-screen bg-dark-green about_container max-w-full flex"
     >
-      <div className="left_content bg-dark-green col-span-4 max-relative flex flex-col lg:w-3/4">
+      <div className="left_content bg-dark-green col-span-4 max-lg:col-span-full max-lg:justify-center max-relative flex flex-col lg:w-3/4">
         <h1 className="text-brand-beige font-montserrat font-bold text-4xl lg:text-6xl p-5 lg:p-10 text-center">
           What is Studybnb?
         </h1>
