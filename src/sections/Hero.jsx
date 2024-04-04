@@ -1,4 +1,4 @@
-import { hero } from "../assets/images";
+import { hero, studybnblogo } from "../assets/images";
 
 const Hero = () => {
   return (
@@ -12,9 +12,18 @@ const Hero = () => {
     >
       <div className="hero-content bg-black bg-opacity-65 text-white py-20 px-5 md:px-20 min-h-screen">
         <div className="max-w-md">
-          <h1 className="font-montserrat text-6xl max-md:text-4xl font-bold">
-            studybnb
-          </h1>
+          <img
+            src={studybnblogo}
+            alt="logo"
+            width={200}
+            height={200}
+            className=""
+          />
+          <div>
+            <h1 className="font-montserrat text-6xl max-md:text-4xl font-bold">
+              studybnb
+            </h1>
+          </div>
           <p className="font-montserrat  text-2xl max-md:text-xl font-bold">
             Chicago
           </p>

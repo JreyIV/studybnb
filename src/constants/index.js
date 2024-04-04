@@ -9,6 +9,7 @@ export const NavLinks = [
   { href: "#home", label: "Home" },
   { href: "#about", label: "About" },
   { href: "#locations", label: "Locations" },
+  { href: "#contact", label: "Contact" },
 ];
 
 export const TopLocations = [

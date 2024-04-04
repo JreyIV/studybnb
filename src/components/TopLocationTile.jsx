@@ -6,10 +6,14 @@ import { magnify } from "../assets/icons";
 
 const TopLocationTile = ({ name, image, id }) => {
   const [isHovered, setIsHovered] = useState(false);
+  const isSmallOrMediumScreen = window.innerWidth <= 768;
 
   return (
     <motion.div
-      initial={{ backgroundSize: "150%", filter: "brightness(70%)" }}
+      initial={{
+        backgroundSize: "150%",
+        filter: !isSmallOrMediumScreen ? "brightness(70%)" : "none",
+      }}
       whileHover={{
         backgroundSize: "130%",
         filter: "brightness(100%)",
@@ -29,7 +33,7 @@ const TopLocationTile = ({ name, image, id }) => {
       <h1 className="text-white font-montserrat font-bold text-xl overflow-wrap break-word">
         {name}
       </h1>
-      <Link to={`/${(id, name)}`} className="block">
+      <Link to={`/${name}`} className="block">
         <div className=" flex justify-center items-center max-md:justify-end max-md:p-5 absolute top-0 left-0 w-full h-full text-white font-montserrat font-bold lg:text-3xl">
           {(isHovered || window.innerWidth <= 768) && (
             <div className="bg-gray-800 opacity-70 rounded-full p-5">
