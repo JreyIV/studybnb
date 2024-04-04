@@ -1,5 +1,17 @@
 import hero from "./hero.jpg";
 import chicago from "./chicago.jpg";
 import cafe from "./cafe.jpg";
+import haroldlibrary from "./haroldlibrary.jpg";
+import kibbitznest from "./kibbitznest.jpg";
+import drawingroom from "./drawingroom.jpg";
+import placeholder from "./placeholder.jpg";
 
-export { hero, chicago, cafe };
+export {
+  hero,
+  chicago,
+  cafe,
+  haroldlibrary,
+  kibbitznest,
+  drawingroom,
+  placeholder,
+};
