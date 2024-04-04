@@ -1,4 +1,4 @@
-import { Hero, About, Locations } from "../sections";
+import { Hero, About, Locations, Contact } from "../sections";
 import Nav from "../components/Nav.jsx";
 
 const Home = () => {
@@ -13,6 +13,9 @@ const Home = () => {
       </section>
       <section className="max-container">
         <Locations />
+      </section>
+      <section className="max-container">
+        <Contact />
       </section>
     </main>
   );

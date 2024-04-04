@@ -12,7 +12,7 @@ const Locations = () => {
           My favorite locations
         </h1>
       </div>
-      <div className="flex-grow flex flex-wrap">
+      <div className="flex-grow flex flex-wrap max-md:gap-5">
         {TopLocations.map((location) => (
           <TopLocationTile
             key={location.id}
