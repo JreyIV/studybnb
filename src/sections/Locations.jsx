@@ -18,7 +18,7 @@ const Locations = () => {
             key={location.id}
             id={location.id}
             name={location.name}
-            image={location.image}
+            image={location.images[0]}
           />
         ))}
       </div>

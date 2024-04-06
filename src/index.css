@@ -117,4 +117,29 @@
       grid-row: 2 / span 2; /* Adjust the number of rows spanned */
     }
   }
+
+  /* location section */
+  .collage {
+    display: grid;
+    grid-template-columns: 2fr repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 8px;
+    grid-row-gap: 8px;
+  }
+
+  .pic1 {
+    grid-area: 1 / 1 / 3 / 2;
+  }
+  .pic2 {
+    grid-area: 1 / 2 / 2 / 3;
+  }
+  .pic3 {
+    grid-area: 2 / 2 / 3 / 3;
+  }
+  .pic4 {
+    grid-area: 1 / 3 / 2 / 4;
+  }
+  .pic5 {
+    grid-area: 2 / 3 / 3 / 4;
+  }
 }
