@@ -12,7 +12,7 @@ const About = () => {
           What is Studybnb?
         </h1>
         <p className="text-white p-5 lg:px-10 font-palanquin text-base lg:text-lg ">
-          In a time where working remotely is the norm, it is easy to become
+          In a time where working remotely is the norm, it&apos;s easy to become
           bored of working in the same old office or school library. I created
           Studybnb to help hard working students and workers find the best
           places to work around Chicago.
@@ -30,8 +30,8 @@ const About = () => {
           In the future, I would like to add more locations as I continue to
           look for the best places to work. I would even like to allow others to
           input their own favorite locations and expand to other cities. For
-          now, I hope that you can check these places out yourself and make your
-          own work a more enjoyable experience.
+          now, I hope that you can check these places out for yourself and make
+          your own work a more enjoyable experience.
         </p>
         <div className="pt-5 lg:pt-10 ml-5 lg:ml-10 flex gap-3 lg:gap-5 items-center">
           <img src={arrowdown} alt="arrowdown" width={25} height={25} />

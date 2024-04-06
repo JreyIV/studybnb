@@ -33,17 +33,11 @@ const TopLocationTile = ({ name, image, id }) => {
       <h1 className="text-white font-montserrat font-bold text-xl overflow-wrap break-word">
         {name}
       </h1>
-      <Link to={`/${name}`} className="block">
+      <Link to={`/${id}`} className="block">
         <div className=" flex justify-center items-center max-md:justify-end max-md:p-5 absolute top-0 left-0 w-full h-full text-white font-montserrat font-bold lg:text-3xl">
           {(isHovered || window.innerWidth <= 768) && (
             <div className="bg-gray-800 opacity-70 rounded-full p-5">
-              <img
-                src={magnify}
-                alt="magnify"
-                width={25}
-                height={25}
-                className=""
-              />
+              <img src={magnify} alt="magnify" width={25} height={25} />
             </div>
           )}
         </div>
