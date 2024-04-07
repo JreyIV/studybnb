@@ -7,9 +7,8 @@ import { backarrow, marker } from "../assets/icons";
 const Location = () => {
   const { id } = useParams();
   const location = TopLocations.find((location) => location.id === id);
-  const { name, address, images, description, hours, details } = location;
-
-  console.log(details);
+  const { name, address, images, description, hours, details, rating } =
+    location;
 
   return (
     <section className="bg-dark-green min-h-screen p-5">
@@ -106,13 +105,18 @@ const Location = () => {
         </div>
 
         {/* my rating ???? */}
-        <div className="flex flex-col md:w-2/3 md:border-b border-gray-500 md:pb-10">
-          <h2 className="pb-5 font-montserrat font-bold text-white text-3xl">
-            About
-          </h2>
-          <p className="font-montserrat text-white leading-normal">
-            {description}
-          </p>
+        <div className="flex py-10 gap-10 ">
+          <div className="flex flex-col md:w-2/3 md:border-b border-gray-500 md:pb-10">
+            <h2 className="pb-5 font-montserrat font-bold text-brand-beige text-3xl">
+              Rating
+            </h2>
+            <p className="font-montserrat text-white leading-normal">
+              {rating.rating} of 5 stars
+            </p>
+            <p className="font-montserrat text-white leading-normal">
+              {rating.desc}
+            </p>
+          </div>
         </div>
       </div>
     </section>
