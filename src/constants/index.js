@@ -4,7 +4,12 @@ import {
   kibbitznest1,
   kibbitznest2,
   drawingroom,
+  drawingroom1,
+  drawingroom2,
   placeholder,
+  drawingroom3,
+  drawingroom4,
+  drawingroom5,
 } from "../assets/images";
 
 import {
@@ -18,6 +23,8 @@ import {
   seat,
   couch,
   busy,
+  starfull,
+  starhalf,
 } from "../assets/icons";
 
 export const NavLinks = [
@@ -66,11 +73,11 @@ export const TopLocations = [
     hours: [
       { day: "Monday", hours: "Closed" },
       { day: "Tuesday", hours: "Closed" },
-      { day: "Wednesday", hours: "4:00 PM - 11:00 PM" },
-      { day: "Thursday", hours: "4:00 PM - 11:00 PM" },
-      { day: "Friday", hours: "4:00 PM - 12:00 AM" },
-      { day: "Saturday", hours: "1:00 PM - 12:00 AM" },
-      { day: "Sunday", hours: "1:00 PM - 7:00 PM" },
+      { day: "Wednesday", hours: "4 PM - 11 PM" },
+      { day: "Thursday", hours: "4 PM - 11 PM" },
+      { day: "Friday", hours: "4 PM - 12 AM" },
+      { day: "Saturday", hours: "1 PM - 12 AM" },
+      { day: "Sunday", hours: "1 PM - 7 PM" },
     ],
     details: [
       { attr: "Wifi", value: "None", src: wifi },
@@ -84,7 +91,11 @@ export const TopLocations = [
       { attr: "Couches", value: "Yes", src: couch },
       { attr: "Busy", value: "Yes", src: busy },
     ],
-    rating: { rating: 4.5, desc: "Great Location" },
+    rating: {
+      rating: 4.7,
+      stars: [...Array(4).fill(starfull), starhalf],
+      desc: "I always enjoy studying at Kibbitznest because of it's energetic environment and comfy atmosphere. Everyone who steps foot in Kibbitznest has a smile on their face because of the good vibes. It's a great place to unwind and bring friends to study or work with. Although it is busy, there are multiple rooms with ample seating and tables. The food is good and there are plenty of other things to do like browse their book section or play games if you need a break from working. The one thing you will need to keep in mind before going is that there is no wifi because they want to promote face to face interactions. So if you are planning to study there, you may need to turn on your personal hotspot.",
+    },
     images: [kibbitznest, kibbitznest1, kibbitznest2],
   },
   {
@@ -92,18 +103,18 @@ export const TopLocations = [
     name: "Drawing Room",
     address: "12 S Michigan Ave, Chicago, IL 60603",
     description:
-      "Sometimes a quiet study place isn't a necessity. Sometimes studying in a unique and creative environment is the best way to work and get the creative juices flowing. Kibbitznest is a perfect study location for those who want to get out of the usual quiet study and work spaces. Located in Clybourn, Kibbitznest is known for its unique combination of bookstore, cafe, and bar, providing a cozy and inviting atmosphere for visitors to enjoy books, coffee, and cocktails. It has many seats and tables as well as lounge chairs and sofas to work on. You will be surrounded by other people engaging in conversation with alcoholic beverages or coffee in hand. There are also a lot of people playing board games or card games. If a loud and busy atmosphere doesn't distract your workflow, you need to check this place out!",
+      "If you are into dark academia or want to work in an environment that screams old money aesthetic, look no further than The Drawing Room at the Chicago Athletic Association. Picture yourself in a room straight out of a vintage novel - think plush velvet armchairs, mahogany tables, and flickering candlelight casting dancing shadows on the walls. It really feels like you're working in an old castle or studying in the dormatories of Hogwarts. The area includes three grand fireplaces, a community library tatble, and many places to sit. In a city bustling with modernity, the Drawing Room stands as a bastion of old-world charm and intellectual pursuit.",
     hours: [
-      { day: "Monday", hours: "Closed" },
-      { day: "Tuesday", hours: "Closed" },
-      { day: "Wednesday", hours: "4:00 PM - 11:00 PM" },
-      { day: "Thursday", hours: "4:00 PM - 11:00 PM" },
-      { day: "Friday", hours: "4:00 PM - 12:00 AM" },
-      { day: "Saturday", hours: "1:00 PM - 12:00 AM" },
-      { day: "Sunday", hours: "1:00 PM - 7:00 PM" },
+      { day: "Monday", hours: "11 AM - 11 PM" },
+      { day: "Tuesday", hours: "11 AM - 11 PM" },
+      { day: "Wednesday", hours: "11 AM - 11 PM" },
+      { day: "Thursday", hours: "11 AM - 11 PM" },
+      { day: "Friday", hours: "11 AM - 12 AM" },
+      { day: "Saturday", hours: "10 AM - 12 AM" },
+      { day: "Sunday", hours: "10 AM - 9 PM" },
     ],
     details: [
-      { attr: "Wifi", value: "None", src: wifi },
+      { attr: "Wifi", value: "Yes", src: wifi },
       { attr: "Bathrooms", value: "Yes", src: bathroom },
       { attr: "Noise", value: "Loud", src: noise },
       { attr: "Music", value: "Yes", src: music },
@@ -114,7 +125,19 @@ export const TopLocations = [
       { attr: "Couches", value: "Yes", src: couch },
       { attr: "Busy", value: "Yes", src: busy },
     ],
-    images: [drawingroom],
+    rating: {
+      rating: 4.4,
+      stars: [...Array(4).fill(starfull), starhalf],
+      desc: "I loved studying in the Drawing Room. I don't mind the hum of conversation and clink of coffee mugs. It smells nice and is located right outside of Millenium Park so there is a lot to do around there before or after your study session. There are ample outlets for charging your devices and good food. Similar to the other locations on this list, it's a little bit busy so it can be hard to find seats despite the large amount of seating. It is also very dark in there so if you're not seated near a light source, it can be hard to read or write.",
+    },
+    images: [
+      drawingroom,
+      drawingroom1,
+      drawingroom2,
+      drawingroom3,
+      drawingroom4,
+      drawingroom5,
+    ],
   },
   {
     id: "04",
@@ -123,13 +146,13 @@ export const TopLocations = [
     description:
       "Sometimes a quiet study place isn't a necessity. Sometimes studying in a unique and creative environment is the best way to work and get the creative juices flowing. Kibbitznest is a perfect study location for those who want to get out of the usual quiet study and work spaces. Located in Clybourn, Kibbitznest is known for its unique combination of bookstore, cafe, and bar, providing a cozy and inviting atmosphere for visitors to enjoy books, coffee, and cocktails. It has many seats and tables as well as lounge chairs and sofas to work on. You will be surrounded by other people engaging in conversation with alcoholic beverages or coffee in hand. There are also a lot of people playing board games or card games. If a loud and busy atmosphere doesn't distract your workflow, you need to check this place out!",
     hours: [
-      { day: "Monday", hours: "Closed" },
-      { day: "Tuesday", hours: "Closed" },
-      { day: "Wednesday", hours: "4:00 PM - 11:00 PM" },
-      { day: "Thursday", hours: "4:00 PM - 11:00 PM" },
-      { day: "Friday", hours: "4:00 PM - 12:00 AM" },
-      { day: "Saturday", hours: "1:00 PM - 12:00 AM" },
-      { day: "Sunday", hours: "1:00 PM - 7:00 PM" },
+      { day: "Monday", hours: "11 AM - 11 PM" },
+      { day: "Tuesday", hours: "11 AM - 11 PM" },
+      { day: "Wednesday", hours: "11 AM - 11 PM" },
+      { day: "Thursday", hours: "4 PM - 11 PM" },
+      { day: "Friday", hours: "4 PM - 12 AM" },
+      { day: "Saturday", hours: "1 PM - 12 AM" },
+      { day: "Sunday", hours: "1 PM - 7 PM" },
     ],
     details: [
       { attr: "Wifi", value: "None", src: wifi },

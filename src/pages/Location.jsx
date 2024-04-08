@@ -44,13 +44,13 @@ const Location = () => {
             <img src={images[2]} alt={name} />
           </div>
           <div className="pic3">
-            <img src={images[1]} alt={name} />
+            <img src={images[3]} alt={name} />
           </div>
           <div className="pic4 rounded-tr-xl overflow-hidden">
-            <img src={images[1]} alt={name} />
+            <img src={images[4]} alt={name} />
           </div>
           <div className="pic5 rounded-br-xl overflow-hidden">
-            <img src={images[1]} alt={name} />
+            <img src={images[5]} alt={name} />
           </div>
         </div>
 
@@ -110,9 +110,23 @@ const Location = () => {
             <h2 className="pb-5 font-montserrat font-bold text-brand-beige text-3xl">
               Rating
             </h2>
-            <p className="font-montserrat text-white leading-normal">
-              {rating.rating} of 5 stars
-            </p>
+            <div className="flex flex-col gap-2 ">
+              <div className="flex">
+                {rating.stars.map((star, index) => (
+                  <img
+                    key={index}
+                    src={star}
+                    alt="star"
+                    width={20}
+                    height={20}
+                    className="mr-2"
+                  />
+                ))}
+              </div>
+              <p className="font-montserrat text-white pb-5">
+                {rating.rating} of 5 stars
+              </p>
+            </div>
             <p className="font-montserrat text-white leading-normal">
               {rating.desc}
             </p>

@@ -4,6 +4,8 @@ import magnify from "./magnify.svg";
 import paperplane from "./paperplane.svg";
 import backarrow from "./backarrow.svg";
 import marker from "./marker.svg";
+import starfull from "./starfull.svg";
+import starhalf from "./starhalf.svg";
 
 // location details
 import wifi from "./details/wifi.svg";
@@ -34,4 +36,6 @@ export {
   seat,
   couch,
   busy,
+  starfull,
+  starhalf,
 };
