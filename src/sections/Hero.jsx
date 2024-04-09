@@ -1,4 +1,5 @@
 import { hero, studybnblogo } from "../assets/images";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -32,7 +33,9 @@ const Hero = () => {
             your study or work session. Find the most vibey and pleasant places
             to work around Chicago with Studybnb.
           </p>
-          <button className="btn btn-primary">Get Started</button>
+          <Link to="#locations" className="btn btn-primary">
+            Get Started
+          </Link>
         </div>
       </div>
     </div>

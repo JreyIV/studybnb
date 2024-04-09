@@ -7,14 +7,14 @@ import { backarrow, marker } from "../assets/icons";
 const Location = () => {
   const { id } = useParams();
   const location = TopLocations.find((location) => location.id === id);
-  const { name, address, images, description, hours, details, rating } =
+  const { name, address, images, description, hours, details, rating, mapsrc } =
     location;
 
   return (
     <section className="bg-dark-green min-h-screen p-5">
       <div className="mx-auto lg:px-8 max-w-6xl flex flex-col">
         {/* heading */}
-        <div className="py-5">
+        <div className="py-5 w-[20px]">
           <Link to="/" className="flex gap-2 items-center">
             <motion.img
               whileHover={{ scale: 1.3 }}
@@ -130,6 +130,24 @@ const Location = () => {
             <p className="font-montserrat text-white leading-normal">
               {rating.desc}
             </p>
+          </div>
+        </div>
+
+        {/* map */}
+        <div>
+          <h2 className="pb-5 font-montserrat font-bold text-brand-beige text-3xl">
+            Check it out!
+          </h2>
+          <div className="overflow-hidden pb-[56.25%] relative h-0">
+            <iframe
+              src={mapsrc}
+              width="600"
+              height="450"
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              className="left-0 top-0 border-0 h-full w-full absolute"
+            ></iframe>
           </div>
         </div>
       </div>

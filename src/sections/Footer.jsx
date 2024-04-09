@@ -31,11 +31,7 @@ const Footer = () => {
           </h1>
           <div className="flex flex-col pt-5 gap-2 font-montserrat text-lg">
             {TopLocations.map((location) => (
-              <Link
-                key={location.id}
-                to={`/${location.name}`}
-                className="block"
-              >
+              <Link key={location.id} to={`/${location.id}`} className="block">
                 {location.name}
               </Link>
             ))}

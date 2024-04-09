@@ -1,5 +1,6 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { Home, Location } from "./pages/index.js";
+import Layout from "./components/Layout.jsx";
 
 // const router = createBrowserRouter(
 //   createRoutesFromElements([
@@ -20,12 +21,18 @@ import { Home, Location } from "./pages/index.js";
 
 const router = createBrowserRouter([
   {
-    path: "/",
-    element: <Home />,
-  },
-  {
-    path: ":id",
-    element: <Location />,
+    element: <Layout />,
+    children: [
+      {
+        path: "/",
+        element: <Home />,
+      },
+      {
+        path: ":id",
+        element: <Location />,
+      },
+      //Add other routes here...
+    ],
   },
 ]);
 
